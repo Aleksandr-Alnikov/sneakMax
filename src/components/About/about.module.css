@@ -1,0 +1,99 @@
+.about {
+    background-color: #484283;
+    margin-bottom: 100px;
+    position: relative;
+    padding: 186px;
+}
+
+.about:before {
+    content: '';
+    background-image: url("../../img/Group.svg");
+    position: absolute;
+    top: -53px;
+    left: -36px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    right: 95px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    line-height: 140%;
+    color: #fff;
+    max-width: 380px;
+    margin-bottom: 20px;
+}
+
+.label {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+
+@media (max-width: 1300px) {
+    .about {
+        padding-left: 0;
+    }
+
+    .img {
+        right: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .description {
+        max-width: 200px;
+    }
+
+    .about {
+        padding: 146px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .about {
+        padding: 75px;
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 780px) {
+    .img {
+        display: none;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .description {
+        max-width: 300px;
+    }
+
+    .about:before {
+        top: -10px;
+        left: -165px
+    }
+}

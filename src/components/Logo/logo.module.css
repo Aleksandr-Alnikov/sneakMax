@@ -1,0 +1,17 @@
+.logo {
+    font-weight: 700;
+    font-size: 30px;
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .logo {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 780px) {
+    .logo {
+        font-size: 30px;
+    }
+}

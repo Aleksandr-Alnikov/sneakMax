@@ -1,0 +1,37 @@
+.noUi-horizontal .noUi-handle {
+    width: 23px;
+    height: 22px;
+    right: -18px;
+    top: -13px;
+    border-radius: 100%;
+}
+.noUi-horizontal .noUi-handle {
+    width: 4px;
+    height: 28px;
+    right: -17px;
+    top: -12px;
+}
+
+.noUi-handle:before, .noUi-handle:after {
+    content: none;
+    display: block;
+    position: absolute;
+    height: 14px;
+    width: 1px;
+    background: #E8E7E6;
+    left: 14px;
+    top: 6px;
+}
+
+.custom-slider .noUi-handle {
+    transition: background-color 0.3s ease-in-out; /* Плавный переход цвета фона */
+}
+
+.custom-slider .noUi-base {
+    transition: background-color 0.3s ease-in-out; /* Плавный переход фона */
+}
+
+.custom-slider .noUi-connect {
+    transition: background-color 0.3s ease-in-out; /* Плавный переход для соединительной части */
+}
+

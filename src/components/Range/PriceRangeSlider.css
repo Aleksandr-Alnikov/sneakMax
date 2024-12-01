@@ -1,0 +1,30 @@
+.slider-container {
+    width: 400px;
+    margin: auto;
+}
+
+.slider {
+    margin: 20px 0;
+    width: 100%;
+    height: 4px;
+    background-color: #bac2c2;
+    border-radius: 5px;
+}
+
+.thumb {
+    height: 20px;
+    width: 6px;
+    background: #444b58;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.price-range {
+    display: flex;
+    justify-content: space-between;
+}
+
+

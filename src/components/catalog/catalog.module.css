@@ -1,0 +1,38 @@
+.title {
+    font-weight: 700;
+    font-size: 30px;
+    color: #444b58;
+    margin-bottom: 40px;
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 780px) {
+    .list {
+        justify-content: space-between;
+    }
+
+    li {
+       width: 100px
+    }
+}
+
+@media (max-width: 520px) {
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .form_box {
+        margin: 0 auto;
+    }
+}
