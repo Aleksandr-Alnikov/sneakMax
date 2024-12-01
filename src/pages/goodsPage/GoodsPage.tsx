@@ -4,11 +4,19 @@ import {useEffect} from "react";
 import {fetchGoodsId} from "../../redux/goodsSlice";
 import {Button} from "../../components/Button/Button";
 import style from './goodsPage.module.css';
+import {addProduct} from "../../redux/cartSlise";
 
 export const GoodsPage = () => {
     const params = useParams();
     const dispatch = useAppDispatch();
     const {goodsId, isLoading, isError} = useAppSelector(state => state.goods);
+
+    const handleAddGoods = () => {
+        if (goodsId) {
+            const {title, price, imgUrl} = goodsId;
+            dispatch(addProduct({id: Date.now().toString(36) + Math.random().toString(36).substr(2, 9), title, price, imgUrl}))
+        }
+    };
 
     useEffect(() => {
         if(params.id) {
@@ -59,7 +67,7 @@ export const GoodsPage = () => {
                                 <span className={style.price}>{goodsId.price} ₽</span>
                                 <span className={style.old_price}>{goodsId.oldPrice} ₽</span>
                             </div>
-                            <Button className={'goods__btn'} title={'Заказать'} />
+                            <Button className={'goods__btn'} title={'Заказать'}   onClick={handleAddGoods}/>
                             <ul className={style.list_pay}>
                                 <li className={style.pay}>Бесплатная доставка до двери</li>
                                 <li className={style.pay}>Оплата заказа при получении</li>
