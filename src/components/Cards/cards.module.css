@@ -59,3 +59,14 @@ article:hover {
     font-size: 20px;
     color: #444b58;
 }
+
+@media (max-width: 780px) {
+    .btn {
+        bottom: 123px;
+        left: 47px;
+    }
+    .btn_cart {
+        bottom: 67px;
+        left: 49px;
+    }
+}

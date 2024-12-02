@@ -207,6 +207,11 @@ section {
     .goods__btn {
         padding: 16px 90px;
     }
+
+    .btn_cart {
+        bottom: 67px;
+        left: 49px;
+    }
 }
 
 @media (max-width: 520px) {

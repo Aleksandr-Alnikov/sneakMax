@@ -14,7 +14,7 @@ export const GoodsPage = () => {
     const handleAddGoods = () => {
         if (goodsId) {
             const {title, price, imgUrl} = goodsId;
-            dispatch(addProduct({id: Date.now().toString(36) + Math.random().toString(36).substr(2, 9), title, price, imgUrl}))
+            dispatch(addProduct({id: Date.now().toString(36) + Math.random().toString(36).substr(2, 9), title, price, imgUrl}));
         }
     };
 
