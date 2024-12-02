@@ -113,6 +113,15 @@ iframe {
     background-color: #f14f4f;
     font-size: 16px;
     color: #fff;
+    transition: background-color .4s ease;
+}
+
+.hero__btn:hover {
+    background-color: #cc4949;
+}
+
+.hero__btn:active {
+    background-color: #8c2828;
 }
 
 .catalog__btn {
@@ -123,6 +132,15 @@ iframe {
     background-color: #f14f4f;
     font-size: 16px;
     color: #fff;
+    transition: background-color .4s ease;
+}
+
+.catalog__btn:hover {
+    background-color: #cc4949;
+}
+
+.catalog__btn:active {
+    background-color: #8c2828;
 }
 
 .form__btn {
@@ -132,6 +150,15 @@ iframe {
     background-color: #f14f4f;
     font-size: 16px;
     color: #fff;
+    transition: background-color .4s ease;
+}
+
+.form__btn:hover {
+    background-color: #cc4949;
+}
+
+.form__btn:active {
+    background-color: #8c2828;
 }
 
 .goods__btn {
@@ -142,6 +169,15 @@ iframe {
     border-radius: 4px;
     margin-bottom: 40px;
     display: inline-block;
+    transition: background-color .4s ease;
+}
+
+.goods__btn:hover {
+    background-color: #cc4949;
+}
+
+.goods__btn:active {
+    background-color: #8c2828;
 }
 
 .cart__btn {
@@ -149,6 +185,15 @@ iframe {
     padding: 22px 47px;
     background-color: #f14f4f;
     width: 221px;
+    transition: background-color .4s ease;
+}
+
+.cart__btn:hover {
+    background-color: #cc4949;
+}
+
+.cart__btn:active {
+    background-color: #8c2828;
 }
 
 .slick-next {
@@ -170,6 +215,15 @@ iframe {
     display: inline-block;
     width: 220px;
     border-radius: 4px;
+    transition: background-color .4s ease;
+}
+
+.form__button:hover {
+    background-color: #cc4949;
+}
+
+.form__button:active {
+    background-color: #8c2828;
 }
 
 .sending_btn {
@@ -179,6 +233,7 @@ iframe {
     border-radius: 4px;
     padding: 22px 48px;
     width: 230px;
+    transition: background-color .4s ease;
 }
 
 .sending_btn:hover {
@@ -186,6 +241,10 @@ iframe {
     color: #fff;
 }
 
+.sending_btn:active {
+    background-color: #31343c;
+    color: #fff;
+}
 
 section {
     padding-top: 100px;

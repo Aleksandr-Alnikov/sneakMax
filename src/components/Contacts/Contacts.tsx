@@ -1,8 +1,19 @@
 import style from './contacts.module.css';
 import YandexMap from "../Map/Map";
+import {useState} from "react";
 
 
 export const Contacts = () => {
+    const [isHover, setIsHover] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHover(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHover(false);
+    };
+
 
     return (
         <section id={'contacts'} className={style.contacts}>
@@ -10,8 +21,9 @@ export const Contacts = () => {
                 <div className={style.wrapper}>
                     <div>
                         <h2 className={style.title}>Контакты</h2>
-                        <address>
-                            <p className={style.address_title}>Главный офис <span className={style.mod}>?</span></p>
+                        <address className={style.address}>
+                            <p className={`${style.hover} ${isHover ? style.show : ''}`}>Адрес и телефон для корреспонденции, инвесторов. Вопросы о доставке, качестве обслуживания и товара просьба задавать в отдел продаж</p>
+                            <p className={style.address_title}>Главный офис <span onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} className={style.mod}>?</span></p>
                             <a className={style.phone} href="tel:78007898989">+7 800 789 89 89</a>
                             <p className={style.city}>г. Санкт-Петербург, Комсомольская, 43 к1</p>
                         </address>

@@ -7,7 +7,7 @@ type CartState = {
 };
 
 const initialState: CartState = {
-    cart: [],
+    cart: JSON.parse(localStorage.getItem('cart') || "[]"),
 };
 
 
@@ -16,10 +16,12 @@ const cartSlice = createSlice({
     initialState,
     reducers: {
         addProduct: (state, action) => {
-            state.cart.push(action.payload)
+            state.cart.push(action.payload);
+            localStorage.setItem('cart', JSON.stringify(state.cart));
         },
         removeProduct: (state, action) => {
             state.cart = state.cart.filter(item => item.id !== action.payload);
+            localStorage.setItem('cart', JSON.stringify(state.cart));
         },
     },
 });

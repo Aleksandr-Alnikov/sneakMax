@@ -39,6 +39,8 @@ export const fetchFilterGoods = createAsyncThunk<Goods[], Params> ('goods/fetchF
         const limit = 6;
 
         const { data } = await axios.get<{ items: Goods[] }>(`${API_URL}/items?page=${page}&limit=${limit}${genderQuery}${sizesQuery ? `&${sizesQuery}` : ""}${priceQuery}`);
+
+
         return data.items;
     } catch (e) {
         console.log(e);
